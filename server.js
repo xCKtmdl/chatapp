@@ -4,10 +4,6 @@ var path = require('path');
 var mime = require('mime');
 var cache = {};
 
-/*
-var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
-var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
-*/
 
 function send404(response) {
     response.writeHead(404, {
